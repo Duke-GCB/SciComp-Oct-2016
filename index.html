@@ -1,18 +1,18 @@
 ---
 layout: workshop
 root: .
-venue: FIXME      # brief name of host site without address (e.g., "Euphoric State University")
-address: FIXME    # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: FIXME    # country (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: FIXME   # language (two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: FIXME     # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: FIXME  # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: FIXME  # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME  # use YYYY-MM-DD format like "2015-01-01"
-enddate: FIXME    # use YYYY-MM-DD format like" 2015-01-02"
-instructor: FIXME # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: FIXME     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: FIXME    # contact email address for workshop organizer, such as "grace@hopper.org"
+venue: GCB Academy - Introduction to Scientific Computing for Genomics
+address: Bostock Library, Workshop Room in The Edge
+country: United-States
+language: en
+latlng: 36.002956, -78.938281
+humandate: Oct 05-06, 2015
+humantime: 9:00 am - 5:00 pm
+startdate: 2015-10-05
+enddate: 2015-10-06
+instructor: ["Darren Boss (GCB)", "Karen Cranston (Biology)", "Hilmar Lapp (GCB)", "Dan Leehr (GCB)"]
+helper: ["Dan Somers (GCB)", "Rose Daniels (GCB)"]
+contact: gcb-help@duke.edu
 etherpad:         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
@@ -52,21 +52,24 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>'s mission
-  is to help scientists and engineers get more research done in less
-  time and with less pain by teaching them basic lab skills for
-  scientific computing.  This hands-on workshop will cover basic
-  concepts and tools, including program design, version control, data
-  management, and task automation.  Participants will be encouraged to
-  help one another and to apply what they have learned to their own
-  research problems.
-</p>
-<p align="center">
-  <em>
-    For more information on what we teach and why,
-    please see our paper
-    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
-  </em>
+  Computing has become an integral and indispensable part of genomic
+  biology. This course teaches basic skills in scientific computing,
+  with a focus on applications for genomic science, aimed at making
+  you more productive, your computational work more reliable, and your
+  research easier to reproduce and extend, including by your future
+self. The course includes introductions to
+<ol><li>using Unix shell commands to efficiently find, organize, and
+  stage data for analysis;
+  </li><li>basic data types, control flows, functions, and 3rd party
+  packages for the Python programming language commonly encountered in
+  scientific computing;
+  </li><li>using version control to manage with confidence the
+  numerous directions research code takes from inception to
+  publication; and
+  </li><li>techniques for optimizing how your computational analyses
+  run on a high-performance computing cluster.
+  </li></ol>
+  The format of the course is inspired by the acclaimed <a href="{{site.swc_site}}">Software Carpentry</a>-style bootcamps. Hence, this is a fully hands-on workshop, and students are expected to bring a laptop.
 </p>
 
 <!--
@@ -77,9 +80,8 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
 -->
 <p>
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
-  <strong>You don't need to have any previous knowledge of the tools that will
-    be presented at the workshop.</strong>
+  The course is aimed at graduate students, postdocs, early career
+  faculty, and other researchers.
 </p>
 
 <!--
@@ -149,10 +151,10 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
       <tr> <td>10:30</td> <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td>  <td>Building programs with Python</td> </tr>
+      <tr> <td>15:00</td>  <td>Coffee</td> </tr>
+      <tr> <td>17:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
   <div class="col-md-6">
@@ -160,9 +162,9 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
     <table class="table table-striped">
       <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
       <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
+      <tr> <td>12:30</td>  <td>Lunch break</td> </tr>
+      <tr> <td>13:30</td>  <td>Job and data staging for HPC</td> </tr>
+      <tr> <td>15:00</td>  <td>Coffee</td> </tr>
       <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
     </table>
   </div>
@@ -209,9 +211,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
+<!--
 <h2>Syllabus</h2>
-
 <div class="row">
+  -->
+  <!--
   <div class="col-md-6">
     <h3>The Unix Shell</h3>
     <ul>
@@ -224,6 +228,8 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/shell-novice/reference.html">Reference...</a></li>
     </ul>
   </div>
+  -->
+  <!--
   <div class="col-md-6">
     <h3>Programming in Python</h3>
     <ul>
@@ -237,6 +243,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/python-novice-inflammation/reference.html">Reference...</a></li>
     </ul>
   </div>
+  -->
   <!--
   <div class="col-md-6">
     <h3>Programming in R</h3>
@@ -262,10 +269,14 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/matlab-novice-inflammation/reference.html">Reference...</a></li>
      </ul>
    </div>
-   -->
+  -->
+  <!--
 </div>
-
+-->
+<!--
 <div class="row">
+  -->
+  <!--
   <div class="col-md-6">
     <h3>Version Control with Git</h3>
     <ul>
@@ -280,6 +291,8 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/git-novice/reference.html">Reference...</a></li>
     </ul>
   </div>
+  -->
+  <!--
   <div class="col-md-6">
     <h3>Managing Data with SQL</h3>
     <ul>
@@ -294,9 +307,11 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <li><a href="{{site.swc_githubio}}/sql-novice-survey/reference.html">Reference...</a></li>
     </ul>
   </div>
+  -->
+  <!--
 </div>
-
 <hr/>
+-->
 
 <!--
   SETUP
@@ -432,7 +447,7 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
       <h4 id="editor-windows">Windows</h4>
       <p>
         nano is a basic editor and the default that instructors use in the workshop.
-        To install it, 
+        To install it,
         download the <a href="{{site.swc_installer}}">Software Carpentry Windows installer</a>
         and double click on the file to run it.
         <strong>This installer requires an active internet connection.</strong>
@@ -561,88 +576,6 @@ eventbrite:       # optional (insert the alphanumeric key for Eventbrite registr
   which has instructions on how to test that everything was installed correctly.
   </p>
 </div> <!-- End of 'Python' section. -->
-
-<div id="r"> <!-- Start of 'R' section. -->
-  <h3>R</h3>
-
-  <p>
-    <a href="http://www.r-project.org">R</a> is a programming language
-    that is especially powerful for data exploration, visualization, and
-    statistical analysis. To interact with R, we use
-    <a href="http://www.rstudio.com/">RStudio</a>.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="r-windows">Windows</h4>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/windows/base/release.htm">this .exe file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-macosx">Mac OS X</h4>
-      <p>
-        Install R by downloading and running
-        <a href="http://cran.r-project.org/bin/macosx/R-latest.pkg">this .pkg file</a>
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>.
-        Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="r-linux">Linux</h4>
-      <p>
-        You can download the binary files for your distribution
-        from <a href="http://cran.r-project.org/index.html">CRAN</a>. Or
-        you can use your package manager (e.g. for Debian/Ubuntu
-        run <code>sudo apt-get install r-base</code> and for Fedora run
-        <code>sudo yum install R</code>).  Also, please install the
-        <a href="http://www.rstudio.com/ide/download/desktop">RStudio IDE</a>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'R' section. -->
-
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-        The <a href="{{site.swc_github}}/windows-installer">Software Carpentry Windows Installer</a>
-        installs SQLite for Windows.
-        If you used the installer to configure nano, you don't need to run it again.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">Mac OS X</h4>
-      <p>
-        SQLite comes pre-installed on Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-        SQLite comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-    Instructors will provide a workaround for it if needed.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
