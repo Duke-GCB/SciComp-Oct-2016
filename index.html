@@ -6,15 +6,15 @@ address: Bostock Library, Workshop Room in The Edge
 country: United-States
 language: en
 latlng: 36.002956, -78.938281
-humandate: March 21-22, 2016
+humandate: October 17-18, 2016
 humantime: 9:00 am - 5:00 pm
-startdate: 2016-03-21
-enddate: 2016-03-22
-instructor: ["Darren Boss (GCB)", "Karen Cranston (Biology)", "Hilmar Lapp (GCB)", "Dan Leehr (GCB)"]
-helper: ["John Bradley (GCB)", "Rose Daniels (GCB)"]
+startdate: 2016-10-17
+enddate: 2016-10-18
+instructor: ["John Bradley (GCB)", "Karen Cranston (Biology)", "Hilmar Lapp (GCB)", "Dan Leehr (GCB)"]
+helper: ["Darren Boss (GCB)", "John Bradley (GCB)", "Rose Daniels (GCB)"]
 contact: gcb-help@duke.edu
-etherpad:         "http://pad.software-carpentry.org/MemksRgdx1"
-eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
+etherpad: # 
+eventbrite: # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
 ---
 <!--
   HEADER
@@ -211,7 +211,7 @@ self. The course includes introductions to
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-
+<!--
 <h2>Syllabus</h2>
 <div class="row">
   <div class="col-md-6">
@@ -268,9 +268,10 @@ self. The course includes introductions to
   </div>
 </div>
 <hr/>
-
+-->
 
 <!-- materials -- zip files to download -->
+<!--
 <h2 id="materials">Materials</h2>
 <div class="row">
   <div class="col-md-3">
@@ -298,6 +299,7 @@ self. The course includes introductions to
     </ul>
   </div>
 </div>
+-->
 
 <!--
   SETUP
@@ -314,68 +316,68 @@ self. The course includes introductions to
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a Software Carpentry workshop, you will need
+  To participate in this workshop, you will need
   access to the software described below. In addition, you will
   need an up-to-date web browser.
 </p>
 <p>
-  We maintain a list of common issues that occur during installation as a reference for instructors
-  that may be useful on the
+  We maintain a list of common issues that occur during installation as a reference for instructors and learners
+  on the
   <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
 
-<div id="shell"> <!-- Start of 'shell' section. -->
-  <h3>The Bash Shell</h3>
+<div id="shell"> <!-- Start of 'shell' section. --> <!--
+<h3>The Bash Shell</h3>
 
-  <p>
-    Bash is a commonly-used shell that gives you the power to do simple
-    tasks more quickly.
-  </p>
+<p>
+Bash is a commonly-used shell that gives you the power to do simple
+tasks more quickly.
+</p>
 
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="shell-windows">Windows</h4>
-      <p>
-        Download the Git for Windows
-	<a href="https://git-for-windows.github.io/">installer</a>. Run the
-        installer. <strong>Important: on the 6th page of the installation wizard (the
-        page titled `Configuring the terminal emulator...`) select `Use Windows'
-        default console window`. If you forgot to do this programs that you need
-        for the workshop will not work properly. If this happens rerun the
-        installer and select the appropriate option.</strong> On the dialog titled
-        &quot;Adjusting your PATH environment&quot;, we recommend you choose the option
-        labeled &quot;Use Git from the Windows Command Prompt&quot;. This will allow
-        RStudio to work with Git out of the box. We teach Python, not R, in this course,
-        but R is frequently used in computational genomics as well, including for RNAseq analysis.
-      </p>
-      <p>This will provide you
-        with both Git and Bash in the Git Bash program.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="shell-macosx">Mac OS X</h4>
-      <p>
-        The default shell in all versions of Mac OS X is bash, so no
-        need to install anything.  You access bash from the Terminal
-        (found in
-        <code>/Applications/Utilities</code>).  You may want to keep
-        Terminal in your dock for this workshop.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="shell-linux">Linux</h4>
-      <p>
-        The default shell is usually Bash, but if your
-        machine is set up differently you can run it by opening a
-        terminal and typing <code>bash</code>.  There is no need to
-        install anything.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'shell' section. -->
+<div class="row">
+<div class="col-md-4">
+<h4 id="shell-windows">Windows</h4>
+<p>
+Download the Git for Windows
+<a href="https://git-for-windows.github.io/">installer</a>. Run the
+installer. <strong>Important: on the 6th page of the installation wizard (the
+page titled `Configuring the terminal emulator...`) select `Use Windows'
+default console window`. If you forgot to do this programs that you need
+for the workshop will not work properly. If this happens rerun the
+installer and select the appropriate option.</strong> On the dialog titled
+&quot;Adjusting your PATH environment&quot;, we recommend you choose the option
+labeled &quot;Use Git from the Windows Command Prompt&quot;. This will allow
+RStudio to work with Git out of the box. We teach Python, not R, in this course,
+but R is frequently used in computational genomics as well, including for RNAseq analysis.
+</p>
+<p>This will provide you
+with both Git and Bash in the Git Bash program.
+</p>
+</div>
+<div class="col-md-4">
+<h4 id="shell-macosx">Mac OS X</h4>
+<p>
+The default shell in all versions of Mac OS X is bash, so no
+need to install anything.  You access bash from the Terminal
+(found in
+<code>/Applications/Utilities</code>).  You may want to keep
+Terminal in your dock for this workshop.
+</p>
+</div>
+<div class="col-md-4">
+<h4 id="shell-linux">Linux</h4>
+<p>
+The default shell is usually Bash, but if your
+machine is set up differently you can run it by opening a
+terminal and typing <code>bash</code>.  There is no need to
+install anything.
+</p>
+</div>
+</div> --> <!-- End of 'shell' section. -->
+</div>
 
 <div id='git'> <!-- Start of 'Git' section. GitHub browser compatability
-           is given at https://help.github.com/articles/supported-browsers/-->
+           is given at https://help.github.com/articles/supported-browsers/ --> <!--
   <h3>Git</h3>
 
   <p>
@@ -418,10 +420,10 @@ self. The course includes introductions to
         <code>sudo yum install git</code>.
       </p>
     </div>
-  </div>
-</div> <!-- End of 'Git' section. -->
+  </div> --> <!-- End of 'Git' section. -->
+</div>
 
-<div id="editor"> <!-- Start of 'editor' section. -->
+<div id="editor"> <!-- Start of 'editor' section. --> <!--
   <h3>Text Editor</h3>
 
   <p>
@@ -478,8 +480,8 @@ self. The course includes introductions to
         <a href="http://www.sublimetext.com/">Sublime Text</a>.
       </p>
     </div>
-  </div>
-</div> <!-- End of 'editor' section. -->
+  </div> --> <!-- End of 'editor' section. -->
+</div>
 
 <div id="rsync"> <!-- Start of 'rsync' section. --> <!--
   <h3>Rsync client</h3>
@@ -517,7 +519,7 @@ self. The course includes introductions to
 <div id="python"> <!-- Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the IPython notebook.
-           Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility -->
+           Details at http://ipython.org/ipython-doc/2/install/install.html#browser-compatibility --> <!--
   <h3>Python</h3>
 
   <p>
@@ -593,14 +595,14 @@ self. The course includes introductions to
           (this makes the Anaconda distribution the default Python).
         </li>
       </ol>
-    </div>
+    </div> --> <!-- End of 'Python' section. -->
   </div>
   <p>
   Once you are done installing the software listed above,
   please go to <a href="setup/index.html">this page</a>,
   which has instructions on how to test that everything was installed correctly.
   </p>
-</div> <!-- End of 'Python' section. -->
+</div>
 
 <!--
   Uncomment this section if you are using our virtual machine.
